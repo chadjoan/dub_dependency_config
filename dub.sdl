@@ -1,6 +1,18 @@
+// dub.sdl
 name "dub_dependency_config"
 description "Example of configuring dependencies in dub.sdl."
 authors "chadjoan"
 copyright "Copyright © 2017, cjoan"
 license "BSL-1.0"
 dependency "sdlang-d" version="~>0.10.1"
+configuration "application" {
+	targetType "executable"
+	targetName "bin/app"
+	mainSourceFile "source/app.d"
+}
+/*
+	configuration "sdlang-hax" {
+		buildOptions "debugMode"
+	}
+	subConfiguration "sdlang-d" "sdlang-hax"
+*/
