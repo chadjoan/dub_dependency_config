@@ -1,0 +1,6 @@
+name "dub_dependency_config"
+description "Example of configuring dependencies in dub.sdl."
+authors "chadjoan"
+copyright "Copyright © 2017, cjoan"
+license "BSL-1.0"
+dependency "sdlang-d" version="~>0.10.1"
